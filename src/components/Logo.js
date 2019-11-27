@@ -1,22 +1,20 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import { createGlobalStyle } from "styled-components"
 
-import { makeStyles } from "@material-ui/core/styles"
-
-const useStyles = makeStyles(theme => ({
-  logo: {
-    padding: "1rem 0",
-    [theme.breakpoints.down("md")]: {
-      display: "block !important",
-      width: "100% !important",
-      height: "auto !important",
-      marginLeft: "auto !important",
-    },
-  },
-}))
+const GlobalStyles = createGlobalStyle` 
+  @media only screen and (max-width: 400px) {
+    .logo {
+      display: "block !important";
+      width: "70% !important";
+      height: "auto !important";
+      margin-left: "auto !important";
+    }
+  }
+  
+`
 
 const Logo = () => {
-  const classes = useStyles()
   return (
     <StaticQuery
       query={graphql`
@@ -32,7 +30,8 @@ const Logo = () => {
         <img
           src={data.wordpressWpLogo.url.source_url}
           alt="logo"
-          className={classes.logo}
+          className="logo"
+          style={{ padding: "1rem 0" }}
         />
       )}
     />

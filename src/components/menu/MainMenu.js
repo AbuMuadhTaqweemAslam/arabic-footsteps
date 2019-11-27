@@ -9,32 +9,12 @@ import MenuIcon from "@material-ui/icons/Menu"
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer"
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
-import { makeStyles } from "@material-ui/core/styles"
 import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import Box from "@material-ui/core/Box"
 
-const useStyles = makeStyles(theme => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  bg: {
-    backgroundColor: "#253a52",
-  },
-  list: {
-    width: 250,
-  },
-  topNavBtn: {
-    [theme.breakpoints.down("xs")]: {
-      flexWrap: "wrap",
-    },
-  },
-}))
-
 const MainMenu = () => {
-  const classes = useStyles()
-
   const [state, setState] = useState({
     top: false,
   })
@@ -56,7 +36,7 @@ const MainMenu = () => {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <AppBar position="static" className={classes.bg}>
+      <AppBar position="static" style={{ backgroundColor: "#253a52" }}>
         <Toolbar>
           <Container maxWidth="md">
             <Link to="/home/">
@@ -89,7 +69,7 @@ const MainMenu = () => {
               `}
               render={props => (
                 <div>
-                  <Box display="flex" className={classes.topNavBtn}>
+                  <Box display="flex" className="navMob">
                     {props.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(
                       item => (
                         <ListItem button key={item.title}>
@@ -111,7 +91,7 @@ const MainMenu = () => {
 
   return (
     <Fragment>
-      <AppBar position="static" className={classes.bg}>
+      <AppBar position="static" style={{ backgroundColor: "#253a52" }}>
         <Container maxWidth="md">
           <Grid
             container
@@ -123,7 +103,7 @@ const MainMenu = () => {
               <Toolbar>
                 <IconButton
                   edge="start"
-                  className={classes.menuButton}
+                  style={{ marginRight: "2rem" }}
                   color="inherit"
                   aria-label="menu"
                   onClick={toggleDrawer("top", true)}
@@ -134,7 +114,7 @@ const MainMenu = () => {
             </Grid>
             <Grid item xs={9} lg={4}>
               <Link to="/home/">
-                <Logo alt="arabicfootstepslogowhite" className={classes.logo} />
+                <Logo alt="arabicfootstepslogowhite" />
               </Link>
             </Grid>
           </Grid>
