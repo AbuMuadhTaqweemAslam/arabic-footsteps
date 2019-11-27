@@ -14,7 +14,6 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "#253a52",
     paddingTop: "1rem",
     color: "white",
-    marginTop: "1rem",
   },
   btmStrip: {
     backgroundColor: "rgba(0, 0, 0, 0.12)",
