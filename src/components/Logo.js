@@ -1,18 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { createGlobalStyle } from "styled-components"
-
-const GlobalStyles = createGlobalStyle` 
-  @media only screen and (max-width: 400px) {
-    .logo {
-      display: "block !important";
-      width: "70% !important";
-      height: "auto !important";
-      margin-left: "auto !important";
-    }
-  }
-  
-`
 
 const Logo = () => {
   return (

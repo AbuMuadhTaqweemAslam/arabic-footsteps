@@ -13,6 +13,19 @@ import List from "@material-ui/core/List"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemText from "@material-ui/core/ListItemText"
 import Box from "@material-ui/core/Box"
+import { createGlobalStyle } from "styled-components"
+
+const GlobalStyles = createGlobalStyle` 
+  @media only screen and (max-width: 400px) {
+    .logo {
+      display: "block !important";
+      width: "50% !important";
+      height: "auto !important";
+     
+    }
+  }
+  
+`
 
 const MainMenu = () => {
   const [state, setState] = useState({
@@ -99,7 +112,7 @@ const MainMenu = () => {
             justify="space-between"
             alignItems="center"
           >
-            <Grid item xs={2}>
+            <Grid item xs={1}>
               <Toolbar>
                 <IconButton
                   edge="start"
@@ -112,8 +125,9 @@ const MainMenu = () => {
                 </IconButton>
               </Toolbar>
             </Grid>
-            <Grid item xs={9} lg={4}>
+            <Grid item xs={10} lg={4}>
               <Link to="/home/">
+                <GlobalStyles />
                 <Logo alt="arabicfootstepslogowhite" />
               </Link>
             </Grid>

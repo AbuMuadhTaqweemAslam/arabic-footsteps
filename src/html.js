@@ -28,6 +28,17 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <form
+          name="contact"
+          action="/"
+          netlify
+          netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
+        </form>
       </body>
     </html>
   )

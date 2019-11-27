@@ -39,7 +39,7 @@ const FeatureItems = () => {
             render={props =>
               props.allWordpressWpFeatures.edges.map(featureItem => (
                 <Grid item lg={6} key={featureItem.node.id}>
-                  <Card className="featureCards">
+                  <Card className="featureCards" style={{ boxShadow: "none" }}>
                     <Link to={`/features/${featureItem.node.slug}`}>
                       <Box
                         border={0.5}
