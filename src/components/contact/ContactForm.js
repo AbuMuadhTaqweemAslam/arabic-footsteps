@@ -67,6 +67,7 @@ const ContactForm = () => {
             name="contact"
             action="/"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <TextField
               type="text"
