@@ -60,7 +60,7 @@ const Header = () => {
                     fluid={data.writing.childImageSharp.fluid}
                     alt=""
                     style={{
-                      width: "100%",
+                      maxWidth: "500px",
                       height: "auto",
                       margin: "0 auto 2rem auto",
                     }}
