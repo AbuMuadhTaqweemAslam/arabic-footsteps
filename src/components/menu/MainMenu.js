@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react"
+import { hot } from "react-hot-loader"
 import { graphql, StaticQuery, Link } from "gatsby"
 import Logo from "../Logo"
 
@@ -147,4 +148,4 @@ const MainMenu = () => {
   )
 }
 
-export default MainMenu
+export default hot(module)(MainMenu)

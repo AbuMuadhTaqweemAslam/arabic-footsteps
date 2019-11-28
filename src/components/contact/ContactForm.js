@@ -1,4 +1,5 @@
 import React, { Fragment } from "react"
+import { hot } from "react-hot-loader"
 
 // Material UI resources
 import Container from "@material-ui/core/Container"
@@ -117,4 +118,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm
+export default hot(module)(ContactForm)

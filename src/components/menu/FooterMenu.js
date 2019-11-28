@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
 import SocialMedia from "./SocialMedia"
+import { hot } from "react-hot-loader"
 
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
@@ -82,4 +83,4 @@ const FooterMenu = () => {
   )
 }
 
-export default FooterMenu
+export default hot(module)(FooterMenu)

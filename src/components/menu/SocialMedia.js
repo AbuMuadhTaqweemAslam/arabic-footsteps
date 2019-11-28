@@ -1,4 +1,5 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 
 import Box from "@material-ui/core/Box"
 import FacebookIcon from "@material-ui/icons/Facebook"
@@ -21,4 +22,4 @@ const SocialMedia = () => {
   )
 }
 
-export default SocialMedia
+export default hot(module)(SocialMedia)

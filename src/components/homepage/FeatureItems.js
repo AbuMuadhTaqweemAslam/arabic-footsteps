@@ -1,4 +1,5 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 import { graphql, StaticQuery, Link } from "gatsby"
 
 import Card from "@material-ui/core/Card"

@@ -1,4 +1,5 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 import { Link } from "gatsby"
 
 import Container from "@material-ui/core/Container"
@@ -36,4 +37,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default hot(module)(Testimonials)

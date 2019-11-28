@@ -1,4 +1,5 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
@@ -43,4 +44,4 @@ const TopPageHeader = ({ text }) => {
   )
 }
 
-export default TopPageHeader
+export default hot(module)(TopPageHeader)

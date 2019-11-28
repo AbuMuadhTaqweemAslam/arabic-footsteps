@@ -1,4 +1,5 @@
 import React from "react"
+import { hot } from "react-hot-loader"
 import { StaticQuery, graphql } from "gatsby"
 
 const Logo = () => {
@@ -25,4 +26,4 @@ const Logo = () => {
   )
 }
 
-export default Logo
+export default hot(module)(Logo)
