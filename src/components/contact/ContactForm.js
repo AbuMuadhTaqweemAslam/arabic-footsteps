@@ -61,11 +61,10 @@ const ContactForm = () => {
               ]}
             />
           )}
-          <p>Please submit below if further information required.</p>
+          <p>Fill in the form to book your place!</p>
           <form
             onSubmit={onSubmit}
             name="contact"
-            action="/"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
