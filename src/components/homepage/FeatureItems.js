@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery, Link } from "gatsby"
-
+import Typography from "@material-ui/core/Typography"
 import Card from "@material-ui/core/Card"
 import Container from "@material-ui/core/Container"
 import Grid from "@material-ui/core/Grid"
@@ -51,7 +51,8 @@ const FeatureItems = () => {
                           {featureItem.node.acf.feature_icon_name}
                         </Icon>
                         <h3>{featureItem.node.title}</h3>
-                        <p
+                        <Typography
+                          variant="body1"
                           dangerouslySetInnerHTML={{
                             __html: featureItem.node.excerpt,
                           }}
