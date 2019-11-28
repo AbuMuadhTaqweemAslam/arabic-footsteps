@@ -56,7 +56,7 @@ const FeatureItems = () => {
                           dangerouslySetInnerHTML={{
                             __html: featureItem.node.excerpt,
                           }}
-                        />
+                        ></Typography>
                       </Box>
                     </Link>
                   </Card>
