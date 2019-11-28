@@ -33,7 +33,9 @@ export default function HTML(props) {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-        ></form>
+        >
+          <input type="hidden" name="contact" value="contact" />
+        </form>
       </body>
     </html>
   )
