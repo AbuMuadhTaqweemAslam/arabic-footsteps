@@ -1,5 +1,4 @@
 import React from "react"
-import { hot } from "react-hot-loader"
 import MainMenu from "./menu/MainMenu"
 import FooterMenu from "./menu/FooterMenu"
 import { createGlobalStyle } from "styled-components"
@@ -78,4 +77,4 @@ const Layout = ({ children }) => (
   />
 )
 
-export default hot(module)(Layout)
+export default Layout

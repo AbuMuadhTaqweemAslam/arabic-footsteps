@@ -1,5 +1,4 @@
 import React from "react"
-import { hot } from "react-hot-loader"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import BackgroundImage from "gatsby-background-image"
@@ -81,4 +80,4 @@ const Header = () => {
   )
 }
 
-export default hot(module)(Header)
+export default Header
