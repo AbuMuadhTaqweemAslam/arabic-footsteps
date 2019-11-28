@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { hot } from "react-hot-loader"
 
 const useFormValidation = (initialState, validate) => {
   const [values, setValues] = useState(initialState)
@@ -73,4 +72,4 @@ const useFormValidation = (initialState, validate) => {
   }
 }
 
-export default hot(module)(useFormValidation)
+export default useFormValidation
