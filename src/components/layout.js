@@ -77,4 +77,4 @@ const Layout = ({ children }) => (
   />
 )
 
-export default Layout
+export default hot(module)(Layout)

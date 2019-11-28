@@ -69,4 +69,4 @@ const FeatureItems = () => {
   )
 }
 
-export default FeatureItems
+export default hot(module)(FeatureItems)
