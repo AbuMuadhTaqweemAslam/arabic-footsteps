@@ -28,6 +28,15 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+        <form
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          {/* You still need to add the hidden input with the form name to your JSX form */}
+          <input type="hidden" name="contact" value="contact" />
+        </form>
       </body>
     </html>
   )
