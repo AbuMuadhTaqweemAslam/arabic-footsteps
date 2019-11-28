@@ -62,12 +62,7 @@ const ContactForm = () => {
             />
           )}
           <p>Fill in the form to book your place!</p>
-          <form
-            onSubmit={onSubmit}
-            name="contact"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
+          <form onSubmit={onSubmit} name="contact">
             <input type="hidden" name="contact" value="contact" />
             <TextField
               type="text"
